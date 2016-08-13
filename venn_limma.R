@@ -14,12 +14,12 @@ biom_soil = merge_samples(biom, "Soil")
 sample_data(biom_soil)
 
 ## create the object for intersections
-otu_table_soil <- t(otu_table(subset_samples(biom_ITS_soil, Soil%in%c(1,2,4,5,6))))
-venn_counts <- vennCounts(otu_table_ITS_soil)
+otu_table_soil <- t(otu_table(subset_samples(biom_soil, Soil%in%c(1,2,4,5,6))))
+venn_counts <- vennCounts(otu_table_soil)
 venn_counts
 
 ## plotting diagrams
-vennDiagram(venn_counts_ITS)
-vennDiagram(venn_counts_ITS, cex=c(1,1.2,0.8),
+vennDiagram(venn_counts)
+vennDiagram(venn_counts, cex=c(1,1.2,0.8),
             names = c("BC", "CA", "NC","NWA", "OSU"),
             circle.col = c("red","blue","green","grey","yellow"))
