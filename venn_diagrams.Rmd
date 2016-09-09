@@ -1,0 +1,46 @@
+
+---
+title: "Plotting Venn Diagrams for Microbiome studies"
+author: "Gian MN Benucci"
+date: "September 9th, 2016"
+output:
+  pdf_document:
+    latex_engine: xelatex
+  html_document: default
+---
+
+This is an R Markdown document contains code to perform Venn Diagrams using the [Bioconductor](http://bioconductor.org/packages/release/bioc/html/limma.html) package *limma* starting from an object created using the [*Pyloseq*](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003531) package.
+
+```{r, warning=FALSE, message=FALSE}
+library(phyloseq)
+data(GlobalPatterns)
+GlobalPatterns
+```
+
+First of all lets surce the required package and then merge samples according the metadata variable of our interest.
+
+```{r, warning=FALSE, message=FALSE}
+library(limma)
+
+GB_st = merge_samples(GlobalPatterns, "SampleType")
+sample_data(GB_st)
+
+```
+
+Now create the object to calculate the variable intersections and then plot the Venn Diagram.
+
+```{r, warning=FALSE, message=FALSE}
+table_GB_st <- t(otu_table(subset_samples(GB_st, SampleType%in%c(2,5,8))))
+venn_counts <- vennCounts(table_GB_st)
+venn_counts
+```
+
+It is possible to plot interesections of up to 5 group variables. Plots are high customizable, please run help(vennDiagram) for more details on the function.
+
+```{r, warning=FALSE, message=FALSE}
+vennDiagram(venn_counts, cex=c(1,1.2,0.8),
+            names = c("Freshwater", "Ocean", "Soil"),
+            circle.col = c("red","blue","green"))
+```
+
+
