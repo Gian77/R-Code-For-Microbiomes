@@ -1,4 +1,6 @@
-# function abund_phy()
+# This is a test function!
+# This function calculate the relative abundance at Phylum level of your community table
+# to load: source("abund_Phy.R")
 # usage: abund_phy(biom, nsample)
 # biom = biom_table imported in Phyloseq()
 # nsample = number of samples in your map_file
