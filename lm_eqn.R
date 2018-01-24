@@ -1,6 +1,9 @@
 ########################################################
-
-# Source: http://stackoverflow.com/q/7549694/857416
+# A function to plot a regression equation from lm()
+# on a ggplot regression-line plot 
+# which I have odified from: 
+# http://stackoverflow.com/q/7549694/857416
+#########################################################
 
 lm_eqn = function(m) {
   # Displays regression line equation and R^2 value on plot
@@ -25,5 +28,5 @@ lm_eqn = function(m) {
   as.character(as.expression(eq));                 
 }
 
-# base graphics version: http://stackoverflow.com/a/13119440/857416
+
 
