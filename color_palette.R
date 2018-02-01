@@ -1,3 +1,12 @@
+###################################
+##  ***Color Palette in R ***    ##
+##      Gian MN Benucci, PhD     ##
+##   Michigan State University   ##
+##       benucci@msu.edu         ##
+##     February 1st, 2018        ##
+###################################
+
+
 # Here some color blind palette I have used for my data.
 # Also, a quick a code for a quick plot to visualize them.
 
