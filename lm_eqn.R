@@ -1,7 +1,7 @@
 ########################################################
 # A function to plot a regression equation from lm()
 # on a ggplot regression-line plot 
-# which I have odified from: 
+# which I have modified from: 
 # http://stackoverflow.com/q/7549694/857416
 #########################################################
 
