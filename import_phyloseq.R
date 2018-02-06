@@ -1,4 +1,11 @@
-### IMPORTING DATA INTO PHYLOSEQ
+##########################################
+##  ***Importing data in phyloseq ***   ##
+##        Gian MN Benucci, PhD          ##
+##     Michigan State University        ##
+##         benucci@msu.edu              ##
+##       February 2, 2018               ##
+##########################################
+
 
 # removes all variables in the global environment for a fresh start!
 rm(list = ls(all=TRUE)) 
