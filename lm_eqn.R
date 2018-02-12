@@ -1,9 +1,15 @@
-########################################################
-# A function to plot a regression equation from lm()
-# on a ggplot regression-line plot 
-# which I have modified from: 
-# http://stackoverflow.com/q/7549694/857416
-#########################################################
+######################################################
+##  *** plot a regression equation from lm() ***    ##
+##        on a ggplot regression-line plot          ##
+##				                    ##
+## which I have modified from:                      ##
+## http://stackoverflow.com/q/7549694/857416        ##
+##                                                  ##
+##              Gian MN Benucci, PhD                ##
+##          Michigan State University               ##
+##                benucci@msu.edu                   ##
+##              February 2nd, 2018                  ##
+######################################################
 
 lm_eqn = function(m) {
   # Displays regression line equation and R^2 value on plot
