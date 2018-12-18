@@ -11,7 +11,7 @@ Code is related to the following papers<br>
 
 Benucci GMN, Rennick B, Bonito G *Patient propagules: do long-term soil archives preserve legacy fungal and bacterial communities?* Appl Environ Microbiol (under review) Dec-2018<br>
 
-Supplementary code Suppl_file_S2_R_scripts_AEM.R<br>
+Supplementary code `Suppl_file_S2_R_scripts_AEM.R`<br>
 
 
 
