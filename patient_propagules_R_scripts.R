@@ -1,10 +1,12 @@
-# Patient propagules: do long-term soil archives preserve legacy fungal and bacterial communities?
-# Benucci GMN, Rennick B, Bonito G.
-# Michigan State University
-# Applied anbd Environmental Microbiology 
+# *******Script for data analyses ******************************** -----
+# Manuscript:   Patient propagules: do long-term soil archives preserve legacy fungal and bacterial communities?
+# Authors:      Benucci GMN, Rennick B, Bonito G.
+# Affiliation:  Michigan State University
+# Journal:      ...
+# Date:         December 20, 2018
+# ******************************************************************** -----
 
-# Benucci et al. - manuscripot R scripts ---------------
-
+# WORKING ENVIRONMENT SETUP ------------------------------------------------------------
 options(scipen = 999) 
 options(max.print=100000000)
 
