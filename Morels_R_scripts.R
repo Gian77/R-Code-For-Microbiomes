@@ -2,7 +2,7 @@
 # Manuscript:   Microbial Communities Associated with Cultivated Morel (Morchella spp.) Mushrooms
 # Authors:      Longley R, Benucci GMN, ... Bonito G.
 # Affiliation:  Michigan State University
-# Journal:      FEMS Microbiology Ecology 
+# Journal:      ... 
 # Date:         January 23, 2019
 # ******************************************************************** -----
 
